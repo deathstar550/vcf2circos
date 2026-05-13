@@ -308,7 +308,10 @@ class Plotconfig:
         # list of sample TODO working only if vcf monosample
         else:
             # Need verificatons TODO
-            genotype = record.samples[0].data.GT
+            try:
+                genotype = record.samples[0].data.GT
+            except AttributeError:
+                genotype = './.'
             if genotype == "1/0" or "0/1":
                 gt = 1
             elif genotype == "1/1":

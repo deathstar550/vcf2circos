@@ -26,7 +26,7 @@ pd.options.mode.chained_assignment = None  # default='warn'
 # from dash_dict import *
 def convert_rgb_to_names(rgb_tuple):
     # a dictionary of all the hex and their respective names in css3
-    css3_db = CSS3_HEX_TO_NAMES
+    css3_db = webcolors.names("css3")
     names = []
     rgb_values = []
     for color_hex, color_name in css3_db.items():

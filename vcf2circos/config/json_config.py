@@ -15,7 +15,7 @@ defaultdict_json = {
         "width": 1500,
         "height": 1500,
         "title": "my Circos plot",
-        "titlefont": {"family": "Times New Roman", "size": 18, "color": "black"},
+        "title_font": {"family": "Times New Roman", "size": 18, "color": "black"},
         "hovermode": "closest",
         "showlegend": False,
         "xaxis": {
